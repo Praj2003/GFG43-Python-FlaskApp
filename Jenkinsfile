@@ -3,9 +3,9 @@ pipeline { //pipeline
     stages { //collection of stages
         stage("Deploy the app in dev env"){ // job1
             steps {
-                sh 'docker pull jinny1/gfgpython43cicd:latest'
+                sh 'docker pull prajval2003/gfg43cicd:latest'
                 sh 'docker rm -f webapp'
-                sh 'docker run -dit --name webapp -p 80:80 jinny1/gfgpython43cicd:latest'
+                sh 'docker run -dit --name webapp -p 80:80 prajval2003/gfg43cicd:latest'
             }
         }
     }
