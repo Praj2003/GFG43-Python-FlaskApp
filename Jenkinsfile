@@ -1,4 +1,4 @@
-pipeline { //pipeline
+pipeline {  //pipeline where all stages are present
     agent {label "worker1" }
     stages { //collection of stages
         stage("Deploy the app in dev env"){ // job1
